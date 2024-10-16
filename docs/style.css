@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner {
+    background-color: #4096ED; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 20px; 
+}
+
+.tab {
+    margin: 20px;
+}
+
+.tab button {
+    background-color: #DD5186;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.tab button:hover {
+    background-color: #BF4D76; 
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px; 
+    text-align: center; 
+    max-width: 400px;
+    width: 90%; 
+}
+
+.tabcontent {
+    display: none; 
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #DD5186;
+    color: white;
+}
+
+button:hover {
+    background-color: #BF4D76; 
+}
+
+canvas {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}

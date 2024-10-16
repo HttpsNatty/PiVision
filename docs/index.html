@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PiVision</title>
+</head>
+<body>
+    <div class="banner">
+        <h1>PiVision</h1>
+    </div>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'grausTab')">Graus</button>
+        <button class="tablinks" onclick="openTab(event, 'complexosTab')">Complexos</button>
+    </div>
+
+    <div class="container">
+        <div id="grausTab" class="tabcontent">
+            <input type="text" id="graus" placeholder="Insira graus">
+            <button onclick="converter()">Converter</button>
+            <input type="text" id="piInput" placeholder="Insira π como fração">
+            <button onclick="inserirPi()">π</button>
+            <button onclick="converterPiParaGraus()">Converter</button>
+            <button onclick="limpar()">Limpar</button>
+            <canvas id="circulo" width="400" height="400"></canvas>
+            <div id="resultado"></div>
+            <div id="resultadoPi"></div>
+        </div>
+
+        <div id="complexosTab" class="tabcontent">
+            <h1>Calculadora de Números Complexos</h1>
+            <input type="text" id="complexInput" placeholder="Insira um número complexo (ex: 2 + 3i)">
+            <button onclick="converterComplexo()">Converter</button>
+            <div id="resultadoPolar"></div>
+            <canvas id="graficoComplexo" width="300" height="300"></canvas>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
